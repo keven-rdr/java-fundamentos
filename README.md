@@ -11,7 +11,7 @@ Este repositório tem como objetivo armazenar meus estudos e exercícios prátic
 
 💡 **Como contribuir:**
 
-Se você tiver sugestões, correções ou quiser compartilhar uma solução diferente, fique à vontade para abrir uma issue ou pull request. Toda contribuição é bem-vinda!
+Se você tiver sugestões, correções ou quiser compartilhar uma solução diferente. Toda contribuição é bem-vinda!
 
 ---
 
