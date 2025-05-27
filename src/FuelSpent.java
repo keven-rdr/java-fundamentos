@@ -8,13 +8,11 @@ public class FuelSpent {
         BufferedReader br = new BufferedReader(isr);
 
 
-        int temp = Integer.parseInt(br.readLine());
-        int vm = Integer.parseInt(br.readLine());
+        double temp = Double.parseDouble(br.readLine());
+        double vm = Double.parseDouble(br.readLine());
 
-        float litros = (vm * temp)/ 12;
+        double litros = (vm * temp)/ 12;
 
         System.out.printf("%.3f\n", litros );
-
-
     }
 }
