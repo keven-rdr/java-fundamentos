@@ -7,13 +7,13 @@ public class BhaskaraFormula {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         String [] valores = br.readLine().split(" ");
-        float A = Float.parseFloat(valores[0]);
-        float B = Float.parseFloat(valores[1]);
-        float C = Float.parseFloat(valores[2]);
+        double A = Double.parseDouble(valores[0]);
+        double B = Double.parseDouble(valores[1]);
+        double C = Double.parseDouble(valores[2]);
 
         double delta = Math.pow(B,2) - (4*A*C);
 
-        if (delta > 0){
+        if (delta > 0 && A != 0){
             double x1 = (-B + Math.sqrt(delta))/(2*A);
             double x2 = (-B - Math.sqrt(delta))/(2*A);
 
