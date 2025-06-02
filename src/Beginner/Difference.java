@@ -1,21 +1,22 @@
+package Beginner;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Salary {
+public class Difference {
     public static void main(String[] args) throws IOException {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
 
-        int A, B;
-        float C, SALARY;
+        int A, B, C, D, DIFERENCE;
 
         A = Integer.parseInt(br.readLine());
         B = Integer.parseInt(br.readLine());
-        C = Float.parseFloat(br.readLine());
+        C = Integer.parseInt(br.readLine());
+        D = Integer.parseInt(br.readLine());
 
-        SALARY = B * C;
-        System.out.println("NUMBER = "+ A);
-        System.out.printf("SALARY = U$ %.2f\n",SALARY);
+        DIFERENCE = (A * B)-(C * D);
+        System.out.println("DIFERENCA = "+ DIFERENCE);
     }
 }

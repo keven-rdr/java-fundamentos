@@ -1,20 +1,22 @@
+package Beginner;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Difference {
+public class SimpleProduct {
+
     public static void main(String[] args) throws IOException {
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
 
-        int A, B, C, D, DIFERENCE;
+        int A,B, PROD;
 
         A = Integer.parseInt(br.readLine());
         B = Integer.parseInt(br.readLine());
-        C = Integer.parseInt(br.readLine());
-        D = Integer.parseInt(br.readLine());
 
-        DIFERENCE = (A * B)-(C * D);
-        System.out.println("DIFERENCA = "+ DIFERENCE);
+        PROD = (A * B);
+
+        System.out.println("PROD = "+PROD);
     }
 }
