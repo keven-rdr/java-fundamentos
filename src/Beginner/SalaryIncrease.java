@@ -5,48 +5,52 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class SalaryIncrease {
-
-    public static void main (String[] args) throws IOException {
+    public static void main (String args[]) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+        double perc1 = 0.15;
+        double perc2 = 0.12;
+        double perc3 = 0.10;
+        double perc4 = 0.07;
+        double perc5 = 0.04;
         double calculo, reajuste;
-        double salario = Double.parseDouble(br.readLine());
 
-        if (salario >= 0 && salario <= 400.00) {
-            calculo = salario * 1.15;
-            reajuste = calculo - salario;
+        double salary = Double.parseDouble(br.readLine());
+
+        if ( salary >= 0 && salary <= 400 ) {
+            calculo = salary + ( salary * perc1);
+            reajuste = Math.abs(calculo - salary);
             System.out.printf("Novo salario: %.2f\n", calculo);
             System.out.printf("Reajuste ganho: %.2f\n", reajuste);
-            System.out.println("Em percentual: 15%");
+            System.out.printf("Em percentual: %.0f %%%n", (perc1 * 100));
         }
-        else if (salario <= 800.00) {
-            calculo = salario * 1.12;
-            reajuste = calculo - salario;
+        else if (salary <= 800){
+            calculo = salary + ( salary * perc2);
+            reajuste = Math.abs(calculo - salary);
             System.out.printf("Novo salario: %.2f\n", calculo);
             System.out.printf("Reajuste ganho: %.2f\n", reajuste);
-            System.out.println("Em percentual: 12%");
+            System.out.printf("Em percentual: %.0f %%%n", (perc2 * 100));
         }
-        else if (salario <= 1200.00) {
-            calculo = salario * 1.10;
-            reajuste = calculo - salario;
+        else if (salary <= 1200){
+            calculo = salary + ( salary * perc3);
+            reajuste = Math.abs(calculo - salary);
             System.out.printf("Novo salario: %.2f\n", calculo);
             System.out.printf("Reajuste ganho: %.2f\n", reajuste);
-            System.out.println("Em percentual: 10%");
+            System.out.printf("Em percentual: %.0f %%%n", (perc3 * 100));
         }
-        else if (salario <= 2000.00) {
-            calculo = salario * 1.07;
-            reajuste = calculo - salario;
+        else if (salary <= 2000){
+            calculo = salary + ( salary * perc4);
+            reajuste = Math.abs(calculo - salary);
             System.out.printf("Novo salario: %.2f\n", calculo);
             System.out.printf("Reajuste ganho: %.2f\n", reajuste);
-            System.out.println("Em percentual: 7%");
+            System.out.printf("Em percentual: %.0f %%%n", (perc4 * 100));
         }
         else {
-            calculo = salario * 1.04;
-            reajuste = calculo - salario;
+            calculo = salary + ( salary * perc5);
+            reajuste = Math.abs(calculo - salary);
             System.out.printf("Novo salario: %.2f\n", calculo);
             System.out.printf("Reajuste ganho: %.2f\n", reajuste);
-            System.out.println("Em percentual: 4%");
+            System.out.printf("Em percentual: %.0f %%%n", (perc5 * 100));
         }
-
     }
 }
