@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class SalaryIncrease {
-    public static void main (String args[]) throws IOException{
+    public static void main (String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         double perc1 = 0.15;
