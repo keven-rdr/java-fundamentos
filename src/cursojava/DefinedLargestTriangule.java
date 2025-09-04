@@ -26,15 +26,13 @@ public class DefinedLargestTriangule {
         y.b = Double.parseDouble(val2[1]);
         y.c = Double.parseDouble(val2[2]);
 
-        double p1 = (x.a+ x.b+ x.c)/2;
-        double area1 = Math.sqrt(p1*(p1-x.a)*(p1-x.b)*(p1-x.c));
-        double p2 = (y.a+y.b+ y.c)/2;
-        double area2 = Math.sqrt(p2*(p2-y.a)*(p2-y.b)*(p2-y.c));
+        double areaX = x.area();
+        double areaY = y.area();
 
-        System.out.printf("Triangle X area: %.4f\n", area1);
-        System.out.printf("Triangle Y area: %.4f\n",area2);
+        System.out.printf("Triangle X area: %.4f\n", areaX);
+        System.out.printf("Triangle Y area: %.4f\n",areaY);
 
-        if (area1 > area2) {
+        if (areaX > areaY) {
             System.out.println("Larger area: X");
         } else {
             System.out.println("Larger area: Y");
