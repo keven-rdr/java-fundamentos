@@ -19,14 +19,14 @@ public class LojaUsaProduct {
         product.price = Double.parseDouble(br.readLine());
         System.out.print("Quantity in stock: ");
         product.quantity = Integer.parseInt(br.readLine());
-        System.out.println(product);
+        System.out.println("Product data: "+product);
 
         System.out.print("Enter the number of products to be added in stock: ");
         product.addProducts(Integer.parseInt(br.readLine()));
-        System.out.println(product);
+        System.out.println("Updated data: "+product);
 
-        System.out.print("Enter the number of products to be removed from stock:");
+        System.out.print("Enter the number of products to be removed from stock: ");
         product.removeProducts(Integer.parseInt(br.readLine()));
-        System.out.println(product);
+        System.out.println("Updated data: "+product);
     }
 }
