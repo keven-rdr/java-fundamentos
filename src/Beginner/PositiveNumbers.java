@@ -25,8 +25,6 @@ public class PositiveNumbers {
         double f = Double.parseDouble(br.readLine());
         lista.add(f);
 
-        double maiorNumero = Double.MIN_VALUE;
-
         int count = 0;
         for (Number numero : lista){
             if (numero.doubleValue() > 0){
