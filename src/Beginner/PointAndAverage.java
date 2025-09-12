@@ -6,11 +6,11 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PositiveNumbers {
+public class PointAndAverage {
     public static void main (String[] args) throws IOException{
-        List<Number> lista = new ArrayList<>();
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        List<Number> lista = new ArrayList<>();
 
         double a = Double.parseDouble(br.readLine());
         lista.add(a);
@@ -31,10 +31,15 @@ public class PositiveNumbers {
                count++;
             }
         }
-        System.out.println(count +" valores positivos");
 
+        double calc = 0;
+        for (Number numero : lista){
+            if (numero.doubleValue() > 0){
+                calc += numero.doubleValue()/ count;
+            }
+        }
 
-
-
+        System.out.println(count+ " valores positivos");
+        System.out.printf("%.1f\n", calc);
     }
 }

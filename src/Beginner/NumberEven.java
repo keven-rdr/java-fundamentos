@@ -6,35 +6,28 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PositiveNumbers {
+public class NumberEven {
     public static void main (String[] args) throws IOException{
-        List<Number> lista = new ArrayList<>();
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+        List<Number> list = new ArrayList<>();
+
         double a = Double.parseDouble(br.readLine());
-        lista.add(a);
+        list.add(a);
         double b = Double.parseDouble(br.readLine());
-        lista.add(b);
+        list.add(b);
         double c = Double.parseDouble(br.readLine());
-        lista.add(c);
+        list.add(c);
         double d = Double.parseDouble(br.readLine());
-        lista.add(d);
+        list.add(d);
         double e = Double.parseDouble(br.readLine());
-        lista.add(e);
-        double f = Double.parseDouble(br.readLine());
-        lista.add(f);
+        list.add(e);
 
-        int count = 0;
-        for (Number numero : lista){
-            if (numero.doubleValue() > 0){
-               count++;
-            }
-        }
-        System.out.println(count +" valores positivos");
-
-
-
-
-    }
+        int cont = 0;
+        for (Number numero : list){
+            if (numero.doubleValue() % 2 == 0){
+                cont++;
+    }}
+        System.out.println(cont + " valores pares");
+}
 }
