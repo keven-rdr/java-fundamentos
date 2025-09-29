@@ -31,7 +31,7 @@ public class SecundMatrixExerc {
                         System.out.println("Up: " + mat[i-1][j]);
                     }
                     if (j < n-1) {
-                        System.out.println("Right: " + mat[i][j+1]);
+                        System.out.println("Rights: " + mat[i][j+1]);
                     }
                     if (i < m-1) {
                         System.out.println("Down: " + mat[i+1][j]);
