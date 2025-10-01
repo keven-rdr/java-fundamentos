@@ -8,7 +8,7 @@ public class SequenceIJ1 {
         int j = 60;
 
         while (j >= 0) {
-            System.out.println("I=" + i + " J=" + j);
+            System.out.println("I==" + i + " J==" + j);
             i +=3;
             j -= 5;
         }

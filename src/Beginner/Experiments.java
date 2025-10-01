@@ -43,7 +43,7 @@ public class Experiments {
         System.out.println("Total de sapos: "+frog);
 
         System.out.printf("Percentual de coelhos: %.2f %%%n", (double) rabbit / total * 100.0);
-        System.out.printf("Percentual de ratos: %.2f %%%n", (double) rat / total * 100.0);
-        System.out.printf("Percentual de sapos: %.2f %%%n", (double) frog / total * 100.0);
+        System.out.printf("Percentual de Ratos: %.2f %%%n", (double) rat / total * 100.0);
+        System.out.printf("Percentual de Sapos: %.2f %%%n", (double) frog / total * 100.0);
     }
 }
