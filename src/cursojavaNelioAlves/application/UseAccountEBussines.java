@@ -1,5 +1,5 @@
 //PROGRAMA QUE RODA AS ENTIDADES ACCOUNT E BUSINESS QUE USÃO A HERENÇA
-package cursojavaNelioAlves.programas;
+package cursojavaNelioAlves.application;
 
 import cursojavaNelioAlves.entities.BusinessAccount;
 

@@ -1,4 +1,4 @@
-package cursojavaNelioAlves.programas;
+package cursojavaNelioAlves.application;
 
 import cursojavaNelioAlves.entities.ClientPensionato;
 

@@ -1,22 +1,20 @@
-package cursojavaNelioAlves.programas;
+package cursojavaNelioAlves.application;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ForCont {
+public class While {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int n = Integer.parseInt(br.readLine());
+        int a = Integer.parseInt(br.readLine());
 
         int soma = 0;
-        //(define o inicia); condicao; e o (incremeto)
-            for (int i = 0; i < n; i++){
-                int x = Integer.parseInt(br.readLine());
-                soma += x;
-            }
-
+        while ( a != 0 ){
+            soma += a;
+            a = Integer.parseInt(br.readLine());
+        }
         System.out.println(soma);
     }
 }

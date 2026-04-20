@@ -1,13 +1,12 @@
-package cursojavaNelioAlves.programas;
+package cursojavaNelioAlves.application;
 
-
-import cursojavaNelioAlves.entities.Product2;
+import cursojavaNelioAlves.entities.  Product;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class LojaUsaProduct2 {
+public class LojaUsaProduct {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -17,16 +16,9 @@ public class LojaUsaProduct2 {
         System.out.print("Price: ");
         double price = Double.parseDouble(br.readLine());
 
-        Product2 product = new Product2(name, price);
 
-        //exemplo para alterar o nome, usando o set e trazer com o get para apresentar
-        product.setName("Computer");
-        System.out.println("Updated name: " + product.getName());
-        //alterando o preço
-        product.setPrice(1200.00);
-        System.out.println("Update price: "+ product.getPrice());
-        //so pode alterar quando ouver entrada e saida, so vamos fazer a apresentação
-        System.out.println(product.getQuantity() + " units");
+        //objeto iniciado, agora exigindo os parametros
+        Product product = new Product(name, price);
 
         System.out.println("Product data: "+product);
 

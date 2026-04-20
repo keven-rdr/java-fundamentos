@@ -1,4 +1,4 @@
-package cursojavaNelioAlves.programas;
+package cursojavaNelioAlves.application;
 
 import cursojavaNelioAlves.entities.Comment;
 import cursojavaNelioAlves.entities.Post;
